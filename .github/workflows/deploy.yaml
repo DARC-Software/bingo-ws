@@ -72,7 +72,6 @@ jobs:
               --create-namespace \
               --set image.repository=$IMAGE_NAME \
               --set image.tag=$IMAGE_TAG \
-              --set apiKeySecretName=bingo-ws-secret \
               --atomic --wait
 
             echo "✅ Deployment complete"
