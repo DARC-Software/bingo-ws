@@ -65,7 +65,7 @@ jobs:
             export KUBECONFIG=$HOME/.kube/config
 
             echo "📦 Deploying Bingo WS to K3s"
-            cd ~/helm-values/charts/shared/bingo-ws
+            cd ~/helm-values/charts/boozybingo/bingo-ws
 
             helm upgrade --install "$RELEASE_NAME" . \
               --namespace "$NAMESPACE" \
